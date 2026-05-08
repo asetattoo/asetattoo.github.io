@@ -1,0 +1,17 @@
+[
+      {
+    "tipo": "imagen",
+    "url": "resources/bird.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/bird2.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/sheep.jpeg",
+    "titulo": "Diseño disponible"
+  }
+]

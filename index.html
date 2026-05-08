@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Áse Tattoo | Estudio de Tatuajes</title>
+    <meta name="description"
+        content="Explora el portafolio de Áse Tattoo. Especialista en blackwork y fineline. Agenda tu cita hoy.">
+
+    <meta property="og:title" content="Áse Tattoo | Galería de Trabajos">
+    <meta property="og:description" content="Calidad y arte en cada tatuaje. Mira mi galería.">
+    <meta property="og:image" content="resources/bird.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/ase.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Áse Tattoo</h1>
+        <!-- <nav>
+            <a href="https://instagram.com/asee.tattoo" target="_blank">Instagram</a>
+        </nav> -->
+    </header>
+
+    <div class="tabs-container">
+        <button class="tab-button active" onclick="cargarSeccion('realizados.json', this)">Realizados</button>
+        <button class="tab-button" onclick="cargarSeccion('disponibles.json', this)">Disponibles</button>
+        <button class="tab-button" onclick="cargarSeccion('arte.json', this)">Proyectos</button>
+        <button class="tab-button" onclick="cargarSeccion('tiktok.json', this)">tiktok</button>
+    </div>
+
+    <main id="galeria-dinamica" class="grid-container">
+    </main>
+
+    <footer>
+        <p>© 2026 Mi Estudio de Tatuajes - <a href="https://wa.me/5215660130952">Contacto WhatsApp</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="modal-galeria" class="modal" onclick="cerrarModal()">
+        <span class="close">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div id="modal-body">
+            </div>
+            <p id="modal-titulo"></p>
+        </div>
+    </div>
+
+    <div class="fab-container">
+    <div class="fab-options">
+        <a href="https://wa.me/525660130952" target="_blank" class="fab-option">WA</a>
+        <a href="https://instagram.com/asee.tattoo" target="_blank" class="fab-option">IG</a>
+        <a href="https://tiktok.com/@yoyogtrrz" target="_blank" class="fab-option">TK</a>
+        </div>
+    <div class="fab-main" onclick="toggleFab()">
+        <span id="fab-icon">💖</span>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="script.js"></script>

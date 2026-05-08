@@ -1,0 +1,22 @@
+[
+    {
+    "tipo": "imagen",
+    "url": "resources/buscame.png",
+    "titulo": "arte single spotify"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/llueve.png",
+    "titulo": "arte single spotify"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/sistema-solar.png",
+    "titulo": "arte single spotify"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/xsiempre.png",
+    "titulo": "arte single spotify"
+  }
+]
