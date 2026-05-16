@@ -63,12 +63,18 @@ function abrirModal(item) {
     const modal = document.getElementById('modal-galeria');
     const modalBody = document.getElementById('modal-body');
     const modalTitulo = document.getElementById('modal-titulo');
+    const botonCerrar = document.querySelector('.modal .close'); // Buscamos la X
 
     modal.style.display = "block";
     modalTitulo.innerText = item.titulo;
 
+    // Asignamos la función de cerrar al botón X explícitamente
+    if (botonCerrar) {
+        botonCerrar.onclick = cerrarModal;
+    }
+
     if (item.tipo === 'imagen') {
-        modalBody.innerHTML = `<img src="${item.url}" style="width:100%">`;
+        modalBody.innerHTML = `<img src="${item.url}" style="width:100%; max-height:80vh; object-fit:contain;">`;
     } else if (item.tipo === 'video') {
         modalBody.innerHTML = `
             <blockquote class="tiktok-embed" data-video-id="${item.url}" style="width: 100%; margin: 0;">
@@ -85,6 +91,7 @@ function abrirModal(item) {
 function cerrarModal() {
     document.getElementById('modal-galeria').style.display = "none";
     document.getElementById('modal-body').innerHTML = ""; // Limpiamos para detener videos
+    document.getElementById('modal-titulo').innerText = "";
 }
 function toggleFab() {
     const container = document.querySelector('.fab-container');

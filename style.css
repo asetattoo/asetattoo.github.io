@@ -178,16 +178,16 @@ footer a {
 }
 /* --- 8. MODAL STYLES --- */
 .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1000;
+    display: none; 
+    position: fixed; 
+    z-index: 3000; /* Lo subimos a 3000 para que supere los 1500 del header fijo */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.95); /* Fondo casi negro puro para centrar la atención */
     backdrop-filter: blur(5px);
-    overflow: auto;
 }
 
 .modal-content {
@@ -228,7 +228,7 @@ footer a {
 /* --- 9. MENÚ FLOTANTE (HACIA ARRIBA) --- */
 .fab-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     display: flex;
     flex-direction: column; /* Apila hacia arriba */
@@ -401,4 +401,28 @@ footer a {
         text-align: center;
         padding: 10px;
     }
+}
+.close {
+    position: fixed; /* Cambiado a fixed para que se quede arriba a la derecha aunque la imagen sea larga */
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 3100; /* Asegura que la X esté siempre encima de la foto */
+    background: rgba(0, 0, 0, 0.5); /* Un circulito sutil de fondo para que se vea bien sobre cualquier foto */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff69b4; /* Cambia a tu rosa característico cuando pasan el cursor */
+    transform: scale(1.1);
 }
