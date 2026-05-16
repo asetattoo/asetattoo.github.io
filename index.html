@@ -17,18 +17,31 @@
 </head>
 
 <body>
-    <header>
-        <h1>Áse Tattoo</h1>
-        <!-- <nav>
+    <div class="header-fijo">
+        <header>
+            <h1>Áse Tattoo</h1>
+            <!-- <nav>
             <a href="https://instagram.com/asee.tattoo" target="_blank">Instagram</a>
         </nav> -->
-    </header>
+        </header>
 
-    <div class="tabs-container">
-        <button class="tab-button active" onclick="cargarSeccion('realizados.json', this)">Realizados</button>
-        <button class="tab-button" onclick="cargarSeccion('disponibles.json', this)">Disponibles</button>
-        <button class="tab-button" onclick="cargarSeccion('arte.json', this)">Proyectos</button>
-        <button class="tab-button" onclick="cargarSeccion('tiktok.json', this)">tiktok</button>
+        <nav class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <div class="tabs-container" id="tabsMenu">
+                <button class="tab-button active" onclick="seleccionarTab('realizados.json', this)">Realizados❤️</button>
+                <button class="tab-button" onclick="seleccionarTab('disponibles.json', this)">Disponibles</button>
+                <button class="tab-button" onclick="seleccionarTab('arte.json', this)">Proyectos</button>
+                <button class="tab-button" onclick="seleccionarTab('promos.json', this)">Promos ✨</button>
+                <button class="tab-button" onclick="seleccionarTab('tiktok.json', this)"> TikTok </button>
+            </div>
+
+        </nav>
     </div>
 
     <main id="galeria-dinamica" class="grid-container">
@@ -49,15 +62,15 @@
     </div>
 
     <div class="fab-container">
-    <div class="fab-options">
-        <a href="https://wa.me/525660130952" target="_blank" class="fab-option">WA</a>
-        <a href="https://instagram.com/asee.tattoo" target="_blank" class="fab-option">IG</a>
-        <a href="https://tiktok.com/@yoyogtrrz" target="_blank" class="fab-option">TK</a>
+        <div class="fab-options">
+            <a href="https://wa.me/525660130952" target="_blank" class="fab-option">WA</a>
+            <a href="https://instagram.com/asee.tattoo" target="_blank" class="fab-option">IG</a>
+            <a href="https://tiktok.com/@yoyogtrrz" target="_blank" class="fab-option">TK</a>
         </div>
-    <div class="fab-main" onclick="toggleFab()">
-        <span id="fab-icon">💖</span>
+        <div class="fab-main" onclick="toggleFab()">
+            <span id="fab-icon">💖</span>
+        </div>
     </div>
-</div>
 </body>
 
 </html>

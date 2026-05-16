@@ -99,3 +99,25 @@ function toggleFab() {
         icon.innerText = '💖';
     }
 }
+// Función para abrir y cerrar el menú de hamburguesa
+function toggleMenu() {
+    const tabsMenu = document.getElementById('tabsMenu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    tabsMenu.classList.toggle('mobile-open');
+    menuToggle.classList.toggle('active');
+}
+
+// Función intermedia para que el menú se cierre al dar click en una opción
+function seleccionarTab(archivoJson, elementoBoton) {
+    cargarSeccion(archivoJson, elementoBoton);
+    
+    // Si estamos en móvil, cerramos el menú después de hacer click
+    const tabsMenu = document.getElementById('tabsMenu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    if (tabsMenu.classList.contains('mobile-open')) {
+        tabsMenu.classList.remove('mobile-open');
+        menuToggle.classList.remove('active');
+    }
+}
