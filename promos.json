@@ -1,7 +1,8 @@
 [
-    {
-        "tipo": "imagen",
-        "url": "resources/bird.jpeg",
-        "titulo": "Diseño disponible"
-    }
+  {
+    "tipo": "imagen",
+    "url": "resources/promo_1.jpeg",
+    "titulo": "Tarjeta de regalo",
+    "descripcion":"✨ ¡PROMO EXCLUSIVA EN ÁSE TATTOO! ✨\n\n¿Traes en mente ese proyecto de tatuaje o quieres renovar tu piel? ¡Esta es tu oportunidad de hacer rendir tu dinero al máximo! 🖤\n\nLanzamos nuestra GIFT CARD DE EDICIÓN LIMITADA:\n💵 Pagas hoy: $1,000 MXN\n💉 Te llevas: $1,500 MXN de crédito para tatuarte.\n\nLo mejor de todo:\n✅ Flexibilidad total: Úsala en cualquier momento del año (2026).\n✅ Aprovecha el día: Puedes hacerte un diseño grande o varios tatuajes pequeños en la misma sesión hasta agotar tus $1,500 de valor.\n✅ Es transferible: Cómpratela para ti o dásela de regalo a alguien especial.\n\n🚨 ¡Solo tenemos 12 tarjetas disponibles con este valor extra! Aparta la tuya enviando un mensaje directo o un WhatsApp. Se valida al momento de confirmar tu transferencia."
+  }
 ]

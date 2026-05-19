@@ -63,25 +63,37 @@ function abrirModal(item) {
     const modal = document.getElementById('modal-galeria');
     const modalBody = document.getElementById('modal-body');
     const modalTitulo = document.getElementById('modal-titulo');
-    const botonCerrar = document.querySelector('.modal .close'); // Buscamos la X
+    const modalDescripcion = document.getElementById('modal-descripcion');
+    const botonCerrar = document.querySelector('.modal .close');
 
+    // 1. Mostrar el modal antes de calcular elementos
     modal.style.display = "block";
-    modalTitulo.innerText = item.titulo;
-
-    // Asignamos la función de cerrar al botón X explícitamente
-    if (botonCerrar) {
-        botonCerrar.onclick = cerrarModal;
+    
+    // 2. Inyectar Título alternando si viene vacío
+    modalTitulo.innerText = item.titulo || "Áse Tattoo";
+    
+    // 3. Inyectar Descripción scrolleable si existe
+    if (item.descripcion) {
+        modalDescripcion.innerText = item.descripcion;
+        modalDescripcion.style.display = "block";
+    } else {
+        modalDescripcion.innerText = "";
+        modalDescripcion.style.display = "none";
     }
 
+    // 4. Configurar el botón de cerrar
+    if (botonCerrar) botonCerrar.onclick = cerrarModal;
+
+    // 5. Cargar contenido multimedia (Imagen o Video de TikTok)
     if (item.tipo === 'imagen') {
-        modalBody.innerHTML = `<img src="${item.url}" style="width:100%; max-height:80vh; object-fit:contain;">`;
+        modalBody.innerHTML = `<img src="${item.url}" alt="${item.titulo || 'Tatuaje'}">`;
     } else if (item.tipo === 'video') {
         modalBody.innerHTML = `
-            <blockquote class="tiktok-embed" data-video-id="${item.url}" style="width: 100%; margin: 0;">
+            <blockquote class=\"tiktok-embed\" data-video-id=\"${item.url}\" style=\"width: 100%; margin: 0;\">
                 <section></section>
             </blockquote>
         `;
-        // Forzamos a TikTok a cargar el video dentro del modal
+        // Forzamos a TikTok a renderizar el video inyectado dinámicamente
         const s = document.createElement('script');
         s.src = "https://www.tiktok.com/embed.js";
         document.body.appendChild(s);
@@ -90,8 +102,13 @@ function abrirModal(item) {
 
 function cerrarModal() {
     document.getElementById('modal-galeria').style.display = "none";
-    document.getElementById('modal-body').innerHTML = ""; // Limpiamos para detener videos
+    document.getElementById('modal-body').innerHTML = ""; // Detiene videos reproduciéndose
     document.getElementById('modal-titulo').innerText = "";
+    document.getElementById('modal-descripcion').innerText = "";
+    
+    // Resetear el scroll de la descripción al inicio para la próxima vez que se abra
+    const wrapper = document.getElementById('modal-descripcion-wrapper');
+    if (wrapper) wrapper.scrollTop = 0;
 }
 function toggleFab() {
     const container = document.querySelector('.fab-container');

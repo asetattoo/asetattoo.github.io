@@ -1,17 +1,92 @@
 [
-      {
+  {
     "tipo": "imagen",
-    "url": "resources/bird.jpeg",
+    "url": "resources/disp_1.jpeg",
     "titulo": "Diseño disponible"
   },
   {
     "tipo": "imagen",
-    "url": "resources/bird2.jpeg",
+    "url": "resources/disp_2.jpeg",
     "titulo": "Diseño disponible"
   },
   {
     "tipo": "imagen",
-    "url": "resources/sheep.jpeg",
+    "url": "resources/disp_3.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_4.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_5.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_6.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_7.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_8.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_9.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_10.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_11.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_12.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_13.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_14.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_15.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_16.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_17.jpeg",
+    "titulo": "Diseño disponible"
+  },
+  {
+    "tipo": "imagen",
+    "url": "resources/disp_18.jpeg",
     "titulo": "Diseño disponible"
   }
 ]

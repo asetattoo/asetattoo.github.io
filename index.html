@@ -55,9 +55,16 @@
     <div id="modal-galeria" class="modal" onclick="cerrarModal()">
         <span class="close">&times;</span>
         <div class="modal-content" onclick="event.stopPropagation()">
-            <div id="modal-body">
+            <div id="modal-media-container">
+                <div id="modal-body"></div>
             </div>
-            <p id="modal-titulo"></p>
+            
+            <div id="modal-info-container">
+                <h2 id="modal-titulo"></h2>
+                <div id="modal-descripcion-wrapper">
+                    <p id="modal-descripcion"></p>
+                </div>
+            </div>
         </div>
     </div>
 
